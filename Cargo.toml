@@ -1,5 +1,7 @@
 [workspace]
 resolver = "3"
-members = ["crates/maxent-pos-tagger"]
+members = ["crates/maxent-pos-tagger", "crates/maxent-tagger"]
 
 [workspace.dependencies]
+# local crates
+maxent-tagger = {path ="crates/maxent-tagger"}
